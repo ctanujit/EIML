@@ -21,7 +21,7 @@ n = length(test)
 library(forecast)
 
 
-xreg_df  = read_excel("Updated/SIBR_model_fit.xlsx")
+xreg_df  = read_excel("SIBR_model_fit.xlsx")
 reg_datats <- xreg_df$`Fitted Infected Population`
 train_xreg = reg_datats[1:60]
 test_xreg <- reg_datats[61:72]
